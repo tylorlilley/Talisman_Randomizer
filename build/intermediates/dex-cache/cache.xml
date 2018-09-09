@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.4.0_32c2df9fc5cdd1c3a77fcaf56ea2c695261a2184.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d6f595bf25daf9dad70b3362f6ec8b83459481a3">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_33637aab79ea8c5e46b1c0f0bcf1de95d9f31c7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="faa89e1c965d92728eff57450d8d237c9e7f1304">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7f3acaaa1a3c78c07a12e01c69e4813bd7810e56\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_512a400289756143b6f030dd8a8504096e337695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_32c2df9fc5cdd1c3a77fcaf56ea2c695261a2184\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-design-23.4.0_512a400289756143b6f030dd8a8504096e337695.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.4.0_d06a8e118c91b5b0edfd65f8fb3eb7e2be27e34f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_d06a8e118c91b5b0edfd65f8fb3eb7e2be27e34f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\internal_impl-23.4.0_dd524034d28f014337d117bc8de9f69932099eb2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_dd524034d28f014337d117bc8de9f69932099eb2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.4.0_6a59d8625cf8a9666e67de7182f2e4cbe9257157.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.4.0_f09f15d9565019cd34942c00bfcbed7a10c43ddd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_6a59d8625cf8a9666e67de7182f2e4cbe9257157\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\support-annotations-23.4.0_d86020d1f17f30b42a118db646529d57c25ec8b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.4.0_e8e45f1f82bc083def45198951b597b96bb5bca3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_e8e45f1f82bc083def45198951b597b96bb5bca3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_f09f15d9565019cd34942c00bfcbed7a10c43ddd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tylor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Tylor\Documents\GitHub\Talisman_Randomizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_d86020d1f17f30b42a118db646529d57c25ec8b5\classes.dex" />
+    </item>
+
+</items>

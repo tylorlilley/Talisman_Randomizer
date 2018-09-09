@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tylorlilley.talismanrandomizer.CustomizeActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+            <TextView
+                android:id="@+id/baseGameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Base Game"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/assassinBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/assassin"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/druidBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/druid"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/dwarfBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dwarf"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/elfBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/elf"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/ghoulBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ghoul"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/minstrelBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/minstrel"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/monkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/monk"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/priestBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/priest"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/prophetessBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/prophetess"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/sorceressBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/sorceress"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/thiefBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/thief"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/trollBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/troll"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/warriorBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/warrior"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/wizardBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/wizard"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/crownOfCommandBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/crown_of_command"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/reaperLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Reaper"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:textAlignment="center"
+                android:layout_margin="1dp"
+                android:stretchColumns="*"
+                android:background="#ffffff"
+                android:shrinkColumns="3" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:id="@+id/darkCultistBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dark_cultist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/knightBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/knight"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/merchantBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/merchant"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:id="@+id/sageBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/sage"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/danseMacabreBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/danse_macabre"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/dungeonLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Dungeon"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/amazonBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/amazon"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/gladiatorBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/gladiator"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/gypsyBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/gypsy"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/philosopherBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/philosopher"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/swashbucklerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/swashbuckler"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/frostmarchLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Frostmarch"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/leprechaunBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/leprechaun"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/necromancerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/necromancer"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/ogreChieftainBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ogre_chieftain"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/warlockBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/warlock"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/crownAndSceptreBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/crown_and_sceptre"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/iceQueenBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ice_queen"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/warlockQuestsBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/warlock_quests"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/highlandLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Highland"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/alchemistBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/alchemist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/highlanderBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/highlander"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/rogueBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/rogue"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/spriteBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/sprite"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/vampiressBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/vampiress"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/valkyrieBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/valkyrie"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/battleRoyaleBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/battle_royale"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/eagleKingBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/eagle_king"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/handOfDoomBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/hand_of_doom"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/sacredPoolLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Sacred Pool"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chivalricKnightBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/chivalric_knight"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/clericBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/cleric"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/dreadKnightBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dread_knight"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/magusBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/magus"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/demonLordBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/demon_lord"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/judgementDayBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/judgement_day"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/sacredPoolBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/sacred_pool"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/dragonLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Dragon"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/conjurerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/conjurer"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/dragonHunterBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dragon_hunter"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/dragonPriestessBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dragon_priestess"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/dragonRiderBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dragon_rider"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/fireWizardBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/fire_wizard"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/minotaurBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/minotaur"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/domainOfDragonsBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/domain_of_dragons"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/dragonKingBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dragon_king"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/dragonSlayersBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dragon_slayers"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/bloodMoonLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Blood Moon"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/doomsayerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/doomsayer"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/vampireHunterBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/vampire_hunter"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/graveRobberBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/grave_robber
+"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/bloodMoonWerewolfBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/blood_moon_werewolf"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/horribleBlackVoidBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/horrible_black_void"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/lightbearersBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/lightbearers"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/cityLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The City"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/bountyHunterBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/bounty_hunter"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/catBurglarBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/cat_burglar"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/elementalistBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/elementalist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/spyBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/spy"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/tavernMaidBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/tavern_maid"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/tinkererBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/tinkerer"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/thievesGuildBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/thieves_guild"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/merchantsGuildBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/merchants_guild"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/assassinsGuildBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/assassins_guild"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/firelandsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Firelands"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/dervishBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/dervish"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/jinBloodedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/jin_blooded"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/nomadBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/nomad"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/warlordBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/warlord"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/aHeroRisesBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/a_hero_rises"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/crownOfFlameBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/crown_of_flame"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/spreadingFlamesBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/spreading_flames"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/woodlandLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Woodland"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/ancientOakBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ancient_oak"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/leywalkerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/leywalker"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/scoutBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/scout"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/spiderQueenBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/spider_queen"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/totemWarriorBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/totem_warrior"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/judgedByFateBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/judged_by_fate"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/wanderlustBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/wanderlust"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/warOfSeasonsBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/war_of_seasons"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/harbingerLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Harbinger"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/ascendantDivineBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ascendant_divine"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/celestialBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/celestial"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/possessedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/possessed"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/armageddonCrownBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/armageddon_crown"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/endOfDaysBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/end_of_days"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/cataclysmLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Cataclysm"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/arcaneScionBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/arcane_scion"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/barbarianBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/barbarian"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/blackKnightBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/black_knight"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/mutantBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/mutant"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/scavengerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/scavenger"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/cultOfTheDamnedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/cult_of_the_damned"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/landsOfWonderBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/lands_of_wonder"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/theEternalCrownBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/the_eternal_crown"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/theOneTalismanBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/the_one_talisman"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/netherRealmLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Nether Realm"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/pandorasBoxBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/pandoras_box"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/theGauntletBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/the_gauntlet"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/theHuntBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/the_hunt"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/realmsUntravelledLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Realms Untravelled"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/netherPortalBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/nether_portal"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/lordOfDarknessBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/lord_of_darkness"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+
+                    <CheckBox
+                        android:id="@+id/realmwalkersBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/realmwalkers"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorAccentDark" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/digitalEditionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="The Digital Edition"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:shrinkColumns="3"
+                android:stretchColumns="*"
+                android:textAlignment="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/illusionistBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/illusionist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/jesterBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/jester"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/goblinShamanBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/goblin_shaman"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/woodsmanBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/woodsman"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/pathfinderBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/pathfinder"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/samuraiBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/samurai"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/pirateBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/pirate"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/ninjaBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/ninja"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/exorcistBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/exorcist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/courtesanBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/courtesan"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/devilsMinionBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/devils_minion"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/genieBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/genie"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/martyrBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/martyr"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/gamblerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/gambler"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/blackWitchBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/black_witch"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/apprenticeMageBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/apprentice_mage"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/shapeShifterBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/shape_shifter"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/shamanBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/shaman"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/martialArtistBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/martial_artist"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/witchDoctorBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/witch_doctor"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <CheckBox
+                        android:id="@+id/sacarenBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorPrimary"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:onClick="updateGenericSettings"
+                        android:text="@string/sacaren"
+                        android:textColor="@color/material_grey_100"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -4,6 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_randomizer">Randomizer</string>
     <string name="action_about">About</string>
+    <string name="action_customize">Customize</string>
     <string name="initialized">Initialized</string>
     <!-- About -->
     <string name="author_label">About the Author</string>
@@ -11,7 +12,7 @@
     <string name="game_label">About the Game</string>
     <string name="about_the_game">the original Talisman board game was originally published in 1983 by Games Workshop. This randomizer is for the Revised 4th Edition of the game that was released by Fantasy Flight games from 2008 to 2016. It includes all official expansions for that edition of the game, as well as an option to include any characters that were released for the official Digital Edition of the game made by Nomad Games.</string>
     <string name="app_label">About the App</string>
-    <string name="about_the_app1">This app can be used to randomize the character and alternate ending selction for a game of Talisman, with the push of a single button. The characters and endings will be randomly chosen from among the ones availble in the enabled expansions. You can enable and disable a given expansion in the Settings menu. If Hidden Endings are being used, the ending will stay hidden by the app until it is time to be revealed by pressing the REVEAL! button.</string>
+    <string name="about_the_app1">This app can be used to randomize the character and alternate ending selection for a game of Talisman, with the push of a single button. The characters and endings will be randomly chosen from among the ones available in the enabled expansions. You can enable and disable a given expansion in the Settings menu. If Hidden Endings are being used, the ending will stay hidden by the app until it is time to be revealed by pressing the REVEAL! button.</string>
     <string name="about_the_app2">Clicking on the DEAD button next to a character, or clicking on the NEXT ENDING button, will display the next available character or ending for the given slot chosen at random from among the ones remaining, if any are available.</string>
     <string name="about_the_expansions">Info for Using the Expansions</string>
     <string name="about_the_app_3">When using an expansion, all of that expansions characters and alternate endings are added to the available ones to choose from during randomization. Because of this, there must always be at least one expansion selected for use on the Settings page.</string>
@@ -36,6 +37,7 @@
     <string name="harbinger_expansion">Harbinger</string>
     <string name="cataclysm_expansion">Cataclysm</string>
     <string name="nether_realm_expansion">Nether Realm</string>
+    <string name="realms_untraveled_expansion">Realms Untravelled</string>
     <string name="digital_edition_expansion">Digital Edition</string>
     <string name="hidden_only">Hidden Only</string>
     <string name="revealed_only">Revealed Only</string>
@@ -69,14 +71,14 @@
     <!-- Reaper -->
     <string name="dark_cultist">Dark Cultist</string>
     <string name="knight">Knight</string>
-    <string name="merhant">Merchant</string>
+    <string name="merchant">Merchant</string>
     <string name="sage">Sage</string>
     <string name="danse_macabre">Danse Macabre</string>
     <!-- Dungeon -->
     <string name="amazon">Amazon</string>
     <string name="gladiator">Gladiator</string>
     <string name="gypsy">Gypsy</string>
-    <string name="philosopher">Amazon</string>
+    <string name="philosopher">Philosopher</string>
     <string name="swashbuckler">Swashbuckler</string>
     <!-- Frostmarch -->
     <string name="leprechaun">Leprechaun</string>
@@ -101,7 +103,7 @@
     <string name="dread_knight">Dread Knight</string>
     <string name="cleric">Cleric</string>
     <string name="magus">Magus</string>
-    <string name="sacred_pool">Sacred Pool</string>
+    <string name="sacred_pool">The Sacred Pool</string>
     <string name="judgement_day">Judgement Day</string>
     <string name="demon_lord">Demon Lord</string>
     <!-- Dragon -->
@@ -115,12 +117,12 @@
     <string name="domain_of_dragons">Domain of Dragons</string>
     <string name="dragon_slayers">Dragon Slayers</string>
     <!-- Blood Moon -->
-    <string name="grave_digger">Grave Digger</string>
+    <string name="grave_robber">Grave Robber</string>
     <string name="vampire_hunter">Vampire Hunter</string>
     <string name="doomsayer">Doomsayer</string>
     <string name="horrible_black_void">Horrible Black Void</string>
     <string name="blood_moon_werewolf">Blood Moon Werewolf</string>
-    <string name="Lightbearers">Lightbringers</string>
+    <string name="lightbearers">Lightbringers</string>
     <!-- City -->
     <string name="tinkerer">Tinkerer</string>
     <string name="tavern_maid">Tavern Maid</string>
@@ -167,7 +169,10 @@
     <!-- Nether Realm -->
     <string name="pandoras_box">Pandora\'s Box</string>
     <string name="the_hunt">The Hunt</string>
-    <string name="the_guantlet">The Gauntlet</string>
+    <string name="the_gauntlet">The Gauntlet</string>
+    <string name="nether_portal">Nether Portal</string>
+    <string name="lord_of_darkness">Lord of Darkness</string>
+    <string name="realmwalkers">Realmwalkers</string>
     <!-- Digital Edition -->
     <string name="pirate">Pirate</string>
     <string name="ninja">Ninja</string>
@@ -184,6 +189,13 @@
     <string name="illusionist">Illusionist</string>
     <string name="jester">Jester</string>
     <string name="goblin_shaman">Goblin Shaman</string>
+    <string name="woodsman">Woodsman</string>
+    <string name="pathfinder">Pathfinder</string>
+    <string name="samurai">Samurai</string>
+    <string name="sacaren">Sacaren</string>
+    <string name="martial_artist">Martial Artist</string>
+    <string name="witch_doctor">Witch Doctor</string>
+    <!-- null values -->
     <string name="no_character">No Character!</string>
     <string name="no_ending">No Ending!</string>
 

@@ -20,6 +20,11 @@ public class AboutActivity extends BasicActivity {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 
+    protected void selectedCustomizeOption() {
+        finish();
+        startActivity(new Intent(this, CustomizeActivity.class));
+    }
+
     protected void selectedAboutOption() {
         closeOptionsMenu();
     }

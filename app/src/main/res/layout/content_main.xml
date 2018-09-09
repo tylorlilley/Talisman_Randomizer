@@ -451,7 +451,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/alternate_ending_label"
-                    android:id="@+id/endingLabel:" />
+                    android:id="@+id/endingLabel" />
 
                 <TableLayout
                     android:layout_width="match_parent"

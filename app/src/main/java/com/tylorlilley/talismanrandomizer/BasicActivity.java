@@ -37,6 +37,9 @@ abstract public class BasicActivity extends AppCompatActivity {
         else if (id == R.id.action_about) {
             selectedAboutOption();
         }
+        else if (id == R.id.action_customize) {
+            selectedCustomizeOption();
+        }
 
 
         return super.onOptionsItemSelected(item);
@@ -45,5 +48,6 @@ abstract public class BasicActivity extends AppCompatActivity {
     abstract protected void selectedRandomizerOption();
     abstract protected void selectedSettingsOption();
     abstract protected void selectedAboutOption();
+    abstract protected void selectedCustomizeOption();
 
 }

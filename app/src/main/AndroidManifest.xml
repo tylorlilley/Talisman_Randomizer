@@ -21,6 +21,7 @@
         </activity>
         <activity android:name="com.tylorlilley.talismanrandomizer.SettingsActivity" />
         <activity android:name="com.tylorlilley.talismanrandomizer.AboutActivity" />
+        <activity android:name="com.tylorlilley.talismanrandomizer.CustomizeActivity" />
     </application>
 
 </manifest>

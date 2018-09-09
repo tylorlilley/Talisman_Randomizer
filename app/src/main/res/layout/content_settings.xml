@@ -295,8 +295,8 @@
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/digital_edition_expansion"
-                        android:id="@+id/digitalBox"
+                        android:text="@string/realms_untraveled_expansion"
+                        android:id="@+id/realmsUntravelledBox"
                         android:checked="false"
                         android:background="#eeeeee"
                         android:layout_marginTop="2dp"
@@ -307,6 +307,29 @@
                         android:onClick="updateExpansionSettings"
                         android:textSize="12sp"
                         app:buttonTint="#C22939" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        app:buttonTint="#C22939"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/digital_edition_expansion"
+                        android:id="@+id/digitalBox"
+                        android:checked="false"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings"
+                        android:textSize="12sp"
+                        android:layout_column="1" />
+
                 </TableRow>
 
             </TableLayout>
@@ -346,18 +369,17 @@
                         app:buttonTint="#72C3D6" />
 
                     <CheckBox
+                        android:id="@+id/revealedOnlyBox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/revealed_only"
-                        android:id="@+id/revealedOnlyBox"
-                        android:checked="false"
-                        android:layout_marginTop="2dp"
                         android:layout_marginBottom="2dp"
-                        android:layout_marginLeft="1dp"
-                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
                         android:background="#eeeeee"
                         android:buttonTint="#000000"
                         android:onClick="updateGenericSettings"
+                        android:text="@string/revealed_only"
                         app:buttonTint="#72C3D6" />
 
                 </TableRow>

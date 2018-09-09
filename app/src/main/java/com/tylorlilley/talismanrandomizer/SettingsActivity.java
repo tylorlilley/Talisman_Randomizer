@@ -65,6 +65,12 @@ public class SettingsActivity extends BasicActivity {
         startActivity(new Intent(this, AboutActivity.class));
     }
 
+    protected void selectedCustomizeOption() {
+        finish();
+        startActivity(new Intent(this, CustomizeActivity.class));
+    }
+
+
     private boolean isLastBox(String boxName) {
         if (boxName.equals(getString(R.string.dungeon_expansion)) || boxName.equals(getString(R.string.nether_realm_expansion)) || boxName.equals(getString(R.string.digital_edition_expansion))) {
             return false;
@@ -101,6 +107,7 @@ public class SettingsActivity extends BasicActivity {
         ((CheckBox)findViewById(R.id.harbingerBox)).setChecked(pref.getBoolean(getString(R.string.harbinger_expansion), false));
         ((CheckBox)findViewById(R.id.cataclysmBox)).setChecked(pref.getBoolean(getString(R.string.cataclysm_expansion), false));
         ((CheckBox)findViewById(R.id.netherRealmBox)).setChecked(pref.getBoolean(getString(R.string.nether_realm_expansion), false));
+        ((CheckBox)findViewById(R.id.realmsUntravelledBox)).setChecked(pref.getBoolean(getString(R.string.realms_untraveled_expansion), false));
         ((CheckBox)findViewById(R.id.digitalBox)).setChecked(pref.getBoolean(getString(R.string.digital_edition_expansion), false));
 
         // Settings Check Boxes
@@ -109,7 +116,7 @@ public class SettingsActivity extends BasicActivity {
     }
 
 
-    public void updateExpansionSettings(View v) {
+    protected void updateExpansionSettings(View v) {
         CheckBox currentBox = (CheckBox)v;
         if (!currentBox.isChecked() && isLastBox((currentBox.getText().toString()))) {
             currentBox.setChecked(true);
